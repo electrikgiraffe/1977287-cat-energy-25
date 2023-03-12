@@ -5,32 +5,32 @@
 }
 
 .map {
-  background-image: url("/source/img/map/map-mobile.jpg");
+  background-image: url("/img/map/map-mobile.jpg");
   background-repeat: no-repeat;
   display: block;
   width: 100%;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/source/img/map/map-mobile2x.jpg");
+    background-image: url("/img/map/map-mobile2x.jpg");
   }
 }
 
 @media (min-width: $tablet-width) {
   .map {
-    background-image: url("/source/img/map/Map-tablet.jpg");
+    background-image: url("/img/map/Map-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/source/img/map/map-tablet2x.jpg");
+      background-image: url("/img/map/map-tablet2x.jpg");
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .map {
-    background-image: url("/source/img/map/map-desktop.jpg");
+    background-image: url("/img/map/map-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/source/img/map/map-desktop2x.jpg");
+      background-image: url("/img/map/map-desktop2x.jpg");
     }
   }
 }

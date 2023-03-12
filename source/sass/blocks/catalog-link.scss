@@ -17,7 +17,7 @@
 
 .catalog-link::before {
   content: "";
-  background-image: url("/source/img/index/arrow.svg");
+  background-image: url("/img/index/arrow.svg");
   width: 32px;
   height: 10px;
   display: block;
@@ -34,7 +34,7 @@
 
   .catalog-link::before {
     content: "";
-    background-image: url("/source/img/index/arrow.svg");
+    background-image: url("/img/index/arrow.svg");
     width: 32px;
     height: 10px;
     display: block;
@@ -47,7 +47,7 @@
 @media (min-width: $desktop-width) {
   .catalog-link::before {
     content: "";
-    background-image: url("/source/img/index/arrow.svg");
+    background-image: url("/img/index/arrow.svg");
     width: 32px;
     height: 10px;
     display: block;

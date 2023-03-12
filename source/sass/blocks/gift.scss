@@ -2,7 +2,7 @@
 .gift {
   color: $white;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("/source/img/catalog/gift-background.jpg");
+    url("/img/catalog/gift-background.jpg");
   background-size: 100% 290px, 100% 290px;
   background-repeat: no-repeat, no-repeat;
   font-family: "Arial", sans-serif;
@@ -21,7 +21,7 @@
 
   @media (min-resolution: 2dppx) {
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("/source/img/catalog/gift-background2x.jpg");
+      url("/img/catalog/gift-background2x.jpg");
     background-size: 100% 100%, 100% 100%;
   }
 }
@@ -33,7 +33,7 @@
 
 .gift::before {
   content: "";
-  background-image: url("/source/img/catalog/gift-icon.svg");
+  background-image: url("/img/catalog/gift-icon.svg");
   background-position: top;
   background-repeat: no-repeat;
   width: 78px;
@@ -50,7 +50,7 @@
 @media (min-width: $tablet-width) {
   .gift {
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("/source/img/catalog/gift-background-tablet.jpg");
+      url("/img/catalog/gift-background-tablet.jpg");
     background-size: 100% 100%, 100% 100%;
     background-repeat: no-repeat, no-repeat;
     display: flex;
@@ -61,7 +61,7 @@
 
     @media (min-resolution: 2dppx) {
       background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-        url("/source/img/catalog/gift-background-tablet2x.jpg");
+        url("/img/catalog/gift-background-tablet2x.jpg");
       background-size: 100% 100%, 100%  100%;
     }
   }
@@ -82,7 +82,7 @@
     width: 161px;
     height: 191px;
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("/source/img/catalog/gift-background-desktop.jpg");
+      url("/img/catalog/gift-background-desktop.jpg");
     background-size: 245px 289px, 245px 289px;
     background-repeat: no-repeat, no-repeat;
     display: flex;
@@ -93,7 +93,7 @@
 
     @media (min-resolution: 2dppx) {
       background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-        url("/source/img/catalog/gift-background-desktop2x.jpg");
+        url("/img/catalog/gift-background-desktop2x.jpg");
       background-size: 100% 100%, 100%  100%;
     }
   }

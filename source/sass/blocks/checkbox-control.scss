@@ -38,7 +38,7 @@
   bottom: 0;
   margin: auto;
   content: "";
-  background-image: url("/source/img/form/checked-mark.svg");
+  background-image: url("/img/form/checked-mark.svg");
   background-repeat: no-repeat;
   display: block;
   width: 18px;
@@ -58,7 +58,7 @@
   }
 
   .checkbox-control__input[type="checkbox"]:checked + .checkbox-control__mark::before {
-    background-image: url("/source/img/form/tick-tablet.svg");
+    background-image: url("/img/form/tick-tablet.svg");
     width: 26px;
     height: 26px;
   }

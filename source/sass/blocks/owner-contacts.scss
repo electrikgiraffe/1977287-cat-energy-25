@@ -67,26 +67,26 @@
 
 .owner-contacts__field--email {
   width: 190px;
-  background-image: url("/source/img/form/icon_email.png");
+  background-image: url("/img/form/icon_email.png");
   background-repeat: no-repeat;
   background-position: right 15px top 16px;
 }
 
 .owner-contacts__field--email:focus {
-  background-image: url("/source/img/form/icon_email-focus.png");
+  background-image: url("/img/form/icon_email-focus.png");
   background-repeat: no-repeat;
   background-position: right 15px top 16px;
 }
 
 .owner-contacts__field--email:invalid {
-  background-image: url("/source/img/form/icon_email-error.png");
+  background-image: url("/img/form/icon_email-error.png");
   background-repeat: no-repeat;
   background-position: right 15px top 16px;
 }
 
 .owner-contacts__field--tel {
   width: 176px;
-  background-image: url("/source/img/form/phone-icon.png");
+  background-image: url("/img/form/phone-icon.png");
   background-repeat: no-repeat;
   background-position: right 13px top 12px;
   font-size: 16px;

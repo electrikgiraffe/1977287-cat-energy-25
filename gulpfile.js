@@ -18,16 +18,18 @@ import del from 'del';
 
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer(),
-      csso(),
+    .pipe(plumber()) // обработка ошибок
+    .pipe(sass()) // style.scss => style.css
+    .pipe(postcss([ //style.css
+      autoprefixer(), //style.css => style.css[prefix]
+      csso(), //style.css[prefix] => style.css[prefix, min]
     ]))
     .pipe(rename('styles.min.css'))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' })) // source/css
     .pipe(browser.stream());
 }
+
+
 
 //HTML
 
@@ -72,7 +74,7 @@ const copyImages = () => {
 //svg
 
  const svg = () =>
-   gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+   gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 
@@ -142,8 +144,8 @@ const watcher = () => {
   copy,
   optimizeImages,
   gulp.parallel(
-    styles,
     html,
+    styles,
     scripts,
     svg,
     sprite,
@@ -159,6 +161,7 @@ export default gulp.series(
   copyImages,
   gulp.parallel(
     html,
+    styles,
     scripts,
     svg,
     sprite,
