@@ -1,7 +1,65 @@
 
 .checkbox-control__label {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 18px;
   text-transform: uppercase;
+  position: relative;
+  display: block;
+  padding-left: 46px;
+}
+
+.checkbox-control__label:disabled {
+  opacity: 0.3;
+}
+
+.checkbox-control__mark {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: $white;
+  border: 1px solid $basic-grey;
+  margin-top: -5px;
+}
+
+.checkbox-control__mark:hover {
+  border: 1px solid $special-grey;
+}
+
+.checkbox-control__mark:disabled {
+  opacity: 0.3;
+}
+
+.checkbox-control__input[type="checkbox"]:checked + .checkbox-control__mark::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  background-image: url("../img/form/checked-mark.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 18px;
+  height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox-control__label {
+    font-size: 19px;
+    line-height: 30px;
+    padding-left: 60px;
+  }
+
+  .checkbox-control__mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .checkbox-control__input[type="checkbox"]:checked + .checkbox-control__mark::before {
+    background-image: url("../img/form/tick-tablet.svg");
+    width: 26px;
+    height: 26px;
+  }
 }

@@ -1,5 +1,31 @@
+.cat-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cat-slider__slider-toggle {
+  width: 36px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: $basic-green;
+  border: none;
+  position: absolute;
+  top: 7px;
+  left: 103px;
+}
+
+.cat-slider__slider-bar {
+  width: 86px;
+  height: 10px;
+  border: 1px solid $special-grey;
+  border-radius: 6px;
+  background-color: $white;
+}
+
 .cat-slider--margin {
-  margin-top: 15px;
+  margin-top: 18px;
 }
 
 .cat-slider__initial-final {
@@ -7,4 +33,84 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-slider {
+    justify-content: center;
+    position: relative;
+    margin: 0;
+  }
+
+  .cat-slider--margin {
+    margin-top: 23px;
+  }
+
+  .cat-slider__slider-bar {
+    width: 426px;
+    height: 6px;
+    background-color: $special-grey2;
+    border: none;
+  }
+
+  .cat-slider__slider-toggle {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    border: 1px solid $special-grey;
+    background-color: $white;
+    top: 0;
+    left: 340px;
+  }
+
+  .cat-slider__slider-toggle:active {
+    border: 1px solid $basic-green;
+  }
+
+  .cat-slider__slider-toggle::before {
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: $basic-green;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+
+  .cat-slider__initial-final {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-bottom: 1px solid $special-grey;
+    margin-right: 20px;
+    margin-left: 23px;
+  }
+
+  .cat-slider__initial-final:hover {
+    border-bottom: 1px solid $special-dark-grey;
+  }
+
+  .cat-slider__initial-final:active {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-slider {
+    justify-content: right;
+    margin: 0;
+  }
+
+  .cat-slider__slider-toggle {
+    top: 20px;
+    left: 910px;
+  }
+
+  .cat-slider__initial-final {
+    margin: 20px;
+  }
 }

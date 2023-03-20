@@ -1,8 +1,74 @@
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+}
+
+.control__mark {
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 30px;
+  height: 30px;
+  background-color: $white;
+  border: 1px solid $special-grey;
+  border-radius: 50%;
+}
+
+.control__mark:hover {
+  border: 1px solid $special-grey3;
+}
+
+.control__mark:disabled {
+  opacity: 0.3;
+}
+
 .control__label {
   color: $special-dark-grey2;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.control__label:disabled {
+  opacity: 0.3;
+}
+
+.control__field[type="radio"]:checked + .control__mark::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 14px;
+  height: 14px;
+  background-color: $basic-green;
+  border-radius: 50%;
+  content: "";
+}
+
+@media (min-width: $tablet-width) {
+  .control {
+    padding-left: 60px;
+  }
+
+  .control__label {
+    font-size: 19px;
+    line-height: 30px;
+  }
+
+  .control__mark {
+    left: 0;
+    top: -6px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .control__field[type="radio"]:checked + .control__mark::before {
+    width: 18px;
+    height: 18px;
+  }
 }

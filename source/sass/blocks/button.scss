@@ -20,6 +20,15 @@
   background-color: $basic-green2;
 }
 
+.button--banner {
+  display: inline-block;
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
 .button--order {
   display: inline-block;
   width: 280px;
@@ -50,4 +59,51 @@
 .button--show-all-button:active {
   color: $special-grey;
   background-color: $special-grey2;
+}
+
+@media (min-width: $tablet-width) {
+  .button--tablet {
+    width: 632px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .button--banner {
+    width: 244px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 19px;
+    line-height: 20px;
+  }
+
+  .button--form {
+    height: 52px;
+    font-size: 20px;
+  }
+
+  .button--show-all-button {
+    width: 248px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--banner {
+    width: 216px;
+    padding: 17px 14px 17px 14px;
+    font-size: 19px;
+    line-height: 20px;
+  }
+
+  .button--show-all-button {
+    width: 170px;
+  }
+
+  .button--form {
+    width: 570px;
+  }
+
+  .button--tablet {
+    width: 244px;
+  }
 }

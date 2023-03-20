@@ -4,20 +4,64 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  padding: 26px 10px 26px 20px;
 }
 
-.contacts--margin {
-  margin-top: 26px;
-  margin-bottom: 26px;
-  margin-right: 20px;
-  margin-left: 20px;
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts--catalog {
+  background-color: $basic-grey;
 }
 
 .contacts__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+  max-width: 140px;
+}
+
+.contacts__adress-container {
+  max-width: 150px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 60px 70px;
+  }
+
+  .contacts__title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 26px;
+    max-width: 172px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__adress-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 160px;
+    gap: 15px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: none;
+  }
 }

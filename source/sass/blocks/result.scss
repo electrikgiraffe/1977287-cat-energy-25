@@ -1,35 +1,137 @@
 .result--margin {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-.result__description {
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: $special-dark-grey2;
-  margin: 0;
-  margin-bottom: 20px;
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.result-wrapper__kilos-days {
+.result__wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $special-grey;
+  position: relative;
+  border-radius: 3px;
+}
+
+.result__wrapper--weight-loss {
+  padding-top: 14px;
+  padding-right: 41px;
+  padding-left: 41px;
+  padding-bottom: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 13px;
+}
+
+.result__wrapper--total-time {
+  padding-top: 14px;
+  padding-right: 19px;
+  padding-left: 19px;
+  padding-bottom: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 13px;
+}
+
+
+.result__kilos-days {
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  margin-bottom: 12px;
 }
 
-.result-wrapper__weight-time-price {
+.result__weight-time {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
+  max-width: 60px;
+  position: absolute;
+  top: 35px;
+  padding: 0 15px;
+  background-color: $special-grey2;
+  text-align: center;
 }
 
-.result-wrapper__weight-time-price--price {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
+
+@media (min-width: $tablet-width) {
+  .result {
+    display: grid;
+    grid-template-columns: 162px 162px;
+    justify-content: start;
+    gap: 42px;
+  }
+
+  .result__kilos-days {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .result__weight-time {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white;
+    top: 50px;
+    max-width: 127px;
+    padding: 0 10px;
+  }
+
+  .result__wrapper--weight-loss {
+    padding-top: 14px;
+    padding-right: 41px;
+    padding-left: 41px;
+    padding-bottom: 8px;
+    margin: 0;
+  }
+
+  .result__wrapper--total-time {
+    padding-top: 14px;
+    padding-right: 19px;
+    padding-left: 19px;
+    padding-bottom: 8px;
+    margin: 0;
+  }
+
+  .result__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    max-width: 370px;
+    margin-bottom: 60px;
+  }
+
+  .result__kilos-days {
+    margin-bottom: 0;
+  }
+
+  .result__weight-time {
+    background-color: $basic-grey;
+    margin: 7px;
+  }
+
+  .result__wrapper--weight-loss {
+    padding-top: 13px;
+    padding-right: 55px;
+    padding-left: 55px;
+    padding-bottom: 15px;
+  }
+
+  .result__wrapper--total-time {
+    padding-top: 13px;
+    padding-right: 27px;
+    padding-left: 27px;
+    padding-bottom: 15px;
+  }
 }

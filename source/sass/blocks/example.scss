@@ -1,13 +1,68 @@
 
 .example {
   background-color: $special-grey2;
-  padding: 25px 20px;
+  padding: 25px 20px 45px 20px;
+  position: relative;
 }
 
 .example__title {
   font-weight: 400;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 40px;
   margin: 0;
   margin-bottom: 40px;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey2;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background: linear-gradient($white 50%, $basic-grey 50%);
+    padding: 0 30px 60px 30px;
+  }
+
+  .example__title {
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 63px;
+  }
+
+  .example__description {
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $special-dark-grey2;
+    margin: 0;
+    margin-bottom: 54px;
+    max-width: 700px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    background: linear-gradient($white 20%, $basic-grey 80%);
+    padding: 0 110px 70px 110px;
+  }
+
+  .example__title {
+    margin-top: 0;
+    margin-bottom: 145px;
+  }
+
+  .example__description {
+    max-width: 435px;
+    margin-bottom: 70px;
+  }
 }

@@ -4,12 +4,54 @@
   text-decoration: none;
   color: $black;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
 }
 
 .catalog-link:active {
   color: $special-grey;
+}
+
+.catalog-link::before {
+  content: "";
+  background-image: url("../img/index/arrow.svg");
+  width: 32px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 100px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-link {
+    font-size: 19px;
+    line-height: 30px;
+  }
+
+  .catalog-link::before {
+    content: "";
+    background-image: url("../img/index/arrow.svg");
+    width: 32px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 130px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-link::before {
+    content: "";
+    background-image: url("../img/index/arrow.svg");
+    width: 32px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    left: 135px;
+  }
 }

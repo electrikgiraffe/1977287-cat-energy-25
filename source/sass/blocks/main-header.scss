@@ -1,8 +1,53 @@
-.main-header--margin {
-  margin-right: 20px;
-  margin-left: 20px;
+
+.main-header {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid $special-grey;
 }
 
 .main-header__logo {
   text-decoration: none;
+}
+
+.main-header__logo-image:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo-image:active {
+  opacity: 0.6;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 0;
+    margin: 0;
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+  }
+
+  .main-header__logo-image {
+    width: 174px;
+    height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    padding: 53px 110px 0 110px;
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-header__logo-image {
+    width: 202px;
+    height: 59px;
+  }
 }

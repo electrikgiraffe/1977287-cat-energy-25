@@ -1,0 +1,41 @@
+.price {
+  display: flex;
+  justify-content: center;
+}
+
+.price__description {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: -90px;
+    margin-right: 0;
+  }
+
+  .price__description {
+    font-size: 19px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    margin: 0;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .price__description {
+    margin-right: 63px;
+  }
+}

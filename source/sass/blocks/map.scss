@@ -1,0 +1,36 @@
+.map iframe {
+  border: none;
+  display: block;
+  width: 100%;
+}
+
+.map {
+  background-image: url("/img/map/map-mobile.jpg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/map/map-mobile2x.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    background-image: url("/img/map/Map-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/map/map-tablet2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    background-image: url("/img/map/map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/map/map-desktop2x.jpg");
+    }
+  }
+}

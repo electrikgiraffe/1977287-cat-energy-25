@@ -1,19 +1,26 @@
-
-.options__title {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 30px;
+.options {
+  padding: 0 20px;
 }
 
-.options__description {
-  color: $special-dark-grey;
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  margin: 0;
-  margin-bottom: 42px;
+@media (min-width: $tablet-width) {
+  .options {
+    padding: 0 30px;
+  }
+
+  .options--margin {
+    margin-top: 525px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options {
+    padding: 0 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .options--margin {
+    margin-top: 265px;
+    margin-bottom: 75px;
+  }
 }
