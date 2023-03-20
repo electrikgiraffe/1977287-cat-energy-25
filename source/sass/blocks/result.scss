@@ -13,6 +13,7 @@
   flex-direction: column;
   border: 1px solid $special-grey;
   position: relative;
+  border-radius: 3px;
 }
 
 .result__wrapper--weight-loss {
@@ -50,7 +51,7 @@
   line-height: 12px;
   max-width: 60px;
   position: absolute;
-  top: 45px;
+  top: 35px;
   padding: 0 15px;
   background-color: $special-grey2;
   text-align: center;
@@ -74,7 +75,7 @@
     font-size: 14px;
     line-height: 14px;
     background-color: $white;
-    top: 60px;
+    top: 50px;
     max-width: 127px;
     padding: 0 10px;
   }
@@ -117,7 +118,7 @@
 
   .result__weight-time {
     background-color: $basic-grey;
-    margin: 0;
+    margin: 7px;
   }
 
   .result__wrapper--weight-loss {
